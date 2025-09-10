@@ -7,3 +7,4 @@ google-generativeai
 openpyxl
 streamlit-lottie
 requests
+xgboost
