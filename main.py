@@ -10,7 +10,7 @@ import requests
 API_KEY = "AIzaSyDTRWw-qd1bk6Hj2JZxSVISyLXTq6LCalQ"
 genai.configure(api_key=API_KEY)
 
-st.set_page_config(page_title="Revenue Predictor", layout="wide", page_icon="📊")
+st.set_page_config(page_title="Marketing Analytics Predictor", layout="wide", page_icon="📊")
 
 # ======================== Load Lottie Animations (safe) ========================
 def load_lottieurl(url: str):
@@ -251,6 +251,7 @@ if st.button("✨ Predict Revenue & Generate Insights"):
     # ======================== Download ========================
     excel_data = to_excel(summary_df)
     st.download_button("📥 Download Results", excel_data, "campaign_prediction.xlsx")
+
 
 
 
